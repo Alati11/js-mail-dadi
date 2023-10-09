@@ -26,9 +26,16 @@ for (let i = 0; i < lunghezzaArray; i++){
 // - Stampa un messaggio appropriato sull’esito del controllo
 //     - Se mail è corrispondente stampare: mail corretta.
 //     - altrimenti stampare messaggio: mail errata. 
+let message 
+let mailCorrect
+let mailError
 if ( mailUser === mailCurrent){
+    message = mailCorrect
     console.log('Mail corretta');
    } else {
+    message = mailError
     console.log('Mail errata');
     }
       
+    const messDOMElement = document.getElementById('text-message')  
+    messDOMElement.innerHTML = "message"s;
