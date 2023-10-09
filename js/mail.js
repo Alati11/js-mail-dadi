@@ -1,8 +1,9 @@
 // ## Mail utente corretta
 
+esitoValidazione = document.getElementById("text-message")
+
 // - Chiedi all’utente la sua email
 //     - creare un' array contenente una lista di le mail valide per l'accesso
-
 const arrayMail = [
     'giuseppe@gmail.com',
     'alice@gmail.com',
@@ -16,29 +17,26 @@ let mailUser = prompt('Inserisci mail');
 
 // - usare il ciclo for per confrontare la mail inserita con quelle esistenti
 const lunghezzaArray = arrayMail.length
-
-esitoValidazione = document.getElementById("text-message")
+let massageUser 
 
 // - Controlla che sia nella lista di chi pu
 for (let i = 0; i < lunghezzaArray; i++){
     mailCurrent = arrayMail [i]
     console.log(i, mailCurrent); 
-    let messageUser
-
-if ( mailUser === mailCurrent){
-    messageUser = "Mail corretta"
-    esitoValidazione.innerHTML = messageUser
-    console.log('Mail corretta');
-   } else {
-    messageUser = "Mail errata"
-    esitoValidazione.innerHTML = messageUser
-    console.log('Mail errata');
-    } 
+ 
+    if (mailUser == mailCurrent){
+        messageUser = 'Mail corretta'
+        console.log('Mail corretta');  
+    } else {
+        messageUser = 'Mail errata'
+        console.log('Mail errata');
+    }   
 }
-
 // - Stampa un messaggio appropriato sull’esito del controllo
 //     - Se mail è corrispondente stampare: mail corretta.
 //     - altrimenti stampare messaggio: mail errata. 
+esitoValidazione.innerHTML = messageUser;
+
 
  
    
