@@ -17,25 +17,29 @@ let mailUser = prompt('Inserisci mail');
 // - usare il ciclo for per confrontare la mail inserita con quelle esistenti
 const lunghezzaArray = arrayMail.length
 
+esitoValidazione = document.getElementById("text-message")
+
 // - Controlla che sia nella lista di chi pu
 for (let i = 0; i < lunghezzaArray; i++){
     mailCurrent = arrayMail [i]
     console.log(i, mailCurrent); 
+
+    let messageUser
+
+if ( mailUser === mailCurrent){
+    messageUser = "Mail corretta"
+    esitoValidazione.innerHTML = messageUser
+    console.log('Mail corretta');
+   } else {
+    messageUser = "Mail errata"
+    esitoValidazione.innerHTML = messageUser
+    console.log('Mail errata');
+    }
 }
 
 // - Stampa un messaggio appropriato sull’esito del controllo
 //     - Se mail è corrispondente stampare: mail corretta.
 //     - altrimenti stampare messaggio: mail errata. 
-let message 
-let mailCorrect
-let mailError
-if ( mailUser === mailCurrent){
-    message = mailCorrect
-    console.log('Mail corretta');
-   } else {
-    message = mailError
-    console.log('Mail errata');
-    }
-      
-    const messDOMElement = document.getElementById('text-message')  
-    messDOMElement.innerHTML = "message"s;
+
+ 
+   
