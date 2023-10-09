@@ -30,11 +30,12 @@ if ( mailUser === mailCurrent){
     messageUser = "Mail corretta"
     esitoValidazione.innerHTML = messageUser
     console.log('Mail corretta');
+    break;
    } else {
     messageUser = "Mail errata"
     esitoValidazione.innerHTML = messageUser
     console.log('Mail errata');
-    }
+    } 
 }
 
 // - Stampa un messaggio appropriato sull’esito del controllo
