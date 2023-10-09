@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gioco dei dai</title>
+    <link rel="stylesheet" href="./css/dadi.css">
 </head>
 <body>
-
+  <div class="container-game">
     <header>
         <h1>IL GIOCO DEI DADI</h1>
         <section class="header_main">
-          <div id="info_box">
-            <input type="button" id="btn_lancia" value="Lancia i Dadi">     
+          <div id="info_box"> 
+            <input class="button" type="button" id="btn_lancia" value="Lancia i Dadi">     
           </div>
           <!-- /#info_box -->
         </section>
       </header>
 
+      <main>
+        <section class="area-giocatori">
+          <h4>Risultato Giocatore</h4>
+          <p id="num-giocatore"></p>
+          <p id="lancio-giocatore"></p>
+          <!-- /#valore_giocatore -->
+        </section>
+
+        <section class="area-giocatori">
+          <h4>Risultato Banco</h4>
+          <p id="num-banco"></p>
+          <!-- <img src="" alt="risultato del lancio dei dadi" id="immagine_dado_banco"> -->
+          <!-- /#valore_banco -->
+        </section>
+
+        <section id="messaggio">
+         
+        </section>
+      </main>
+  </div>  
 
 
-    
+    <script src="./js/dadi.js"></script>
 </body>
 </html>

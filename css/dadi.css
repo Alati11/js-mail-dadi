@@ -1,0 +1,35 @@
+.container-game {
+    width: 50%;
+    min-height: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color:darkgreen;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    line-height: 40px ;  
+}
+
+.button {
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.messaggio_stile {
+    width: 40%; 
+    border: 2px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.area-giocatori {
+    border: 2px solid black;
+    margin-top: 20px;
+    padding:10px;
+    width: 30%;
+    min-height: 160px;
+    margin: 0 auto;
+}
