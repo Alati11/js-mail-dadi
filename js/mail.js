@@ -23,14 +23,12 @@ esitoValidazione = document.getElementById("text-message")
 for (let i = 0; i < lunghezzaArray; i++){
     mailCurrent = arrayMail [i]
     console.log(i, mailCurrent); 
-
     let messageUser
 
 if ( mailUser === mailCurrent){
     messageUser = "Mail corretta"
     esitoValidazione.innerHTML = messageUser
     console.log('Mail corretta');
-    break;
    } else {
     messageUser = "Mail errata"
     esitoValidazione.innerHTML = messageUser
